@@ -17,7 +17,7 @@ export function Navbar(){
     }
 
     return <nav className="navbar-items">
-        <a href="#" aria-hidden="true">
+        <a href="https://github.com/Alan-Velozo">
             <img src={clicked ? LogoActive : Logo} alt="Logo" className={clicked ? "navbar-logo active" : "navbar-logo"}></img>
         </a>
 
