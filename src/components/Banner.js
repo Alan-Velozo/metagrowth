@@ -7,7 +7,7 @@ export function Banner(props){
         
         <div className="banner-text">
             <h1>{props.title}</h1>
-            <a href="#">¡Empecemos!</a>
+            <a href="#" aria-hidden="true">¡Empecemos!</a>
         </div>
 
     </div>
