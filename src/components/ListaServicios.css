@@ -1,0 +1,32 @@
+.servicios{
+    margin: 4rem 6rem;
+}
+
+.servicios-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.servicios h2{
+    font-size: 3rem;
+    margin: 3rem 0 3rem 0;
+}
+
+@media screen and (max-width: 1023px){
+    .servicios{
+        margin: 4rem 2rem;        
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .servicios h2{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .servicios h2{
+        font-size: 1.5rem;
+    }
+}

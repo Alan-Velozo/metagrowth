@@ -1,0 +1,128 @@
+:root{
+    --mred: #f42b41;
+    --mblue: #000075;
+}
+
+.navbar-items i{
+    color: var(--mblue);
+}
+
+.navbar-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.25);
+    width: 95%;
+    height: 80px;
+    border-radius: 15px;
+    position: fixed;
+    top: 1rem;
+    left: 2.5%;
+    background: white;
+    z-index: 999;
+}
+
+.navbar-menu{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 2rem;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.7rem 1rem;
+    white-space: nowrap;
+}
+
+.nav-links i{
+    padding-right: 1rem;
+}
+
+.nav-links:hover{
+    background: var(--mred);
+    color: white;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.nav-links:hover i{
+    color: white;
+    transition: .5s;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.navbar-logo{
+    width: 160px;
+}
+
+.navbar-logo.active{
+    width: 80px;
+}
+
+@media screen and (max-width: 991px){
+    
+    .navbar-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: var(--mred);
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        opacity: 0;
+        align-items: stretch;
+        padding-top: 5rem;
+        margin: 0;
+        border-radius: 15px;
+        transition: .3s ease-in-out;
+    }
+
+    .navbar-menu.active{
+        left: 0;
+        opacity: 1;
+        z-index: -1;
+        transition: .3s ease-in-out;
+    }
+
+    .nav-links, .nav-links i{
+        color: white;
+    }
+
+    .nav-links{
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 2rem 0;
+    }
+
+    .nav-links:hover{
+        background: white;
+        color:var(--mblue);
+        border-radius: 0;
+    }
+
+    .nav-links:hover i{
+        color: var(--mblue);
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-icon i{
+        font-size: 1.5rem;
+    }
+
+}

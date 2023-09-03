@@ -1,0 +1,45 @@
+.proceso{
+    padding: 4rem 6rem;
+    background: #212121;
+    color: white;
+}
+
+.proceso span{
+    color: var(--mred);
+}
+
+.proceso h2{
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+.proceso p{
+    margin: 3rem 0 5rem 0;
+}
+
+.proceso img{
+    width: 100%;
+}
+
+@media screen and (max-width: 850px){
+    
+    .proceso{
+        padding: 0 0;
+    }
+
+    .proceso p{
+        margin: 3rem 0 0 0;
+    }
+    
+    .proceso-text{
+        padding: 4rem 2rem;
+    }
+
+    .proceso img{
+        padding-bottom: 4rem;
+    }
+
+    .proceso h2{
+        font-size: 2rem;
+    }
+}

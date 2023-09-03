@@ -1,0 +1,40 @@
+.partners h2{
+  font-size: 3rem;
+  margin: 3rem 0 3rem 0;
+}
+
+.partners h2, .partners p{
+  margin: 4rem 6rem;
+}
+
+.partners-img {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  margin: 0;
+  margin-top: 5rem;
+}
+
+.partner img{
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 850px){
+
+  .partners h2{
+    font-size: 2rem;
+  }
+
+  .partners h2, .partners p{
+    margin: 4rem 2rem;
+  }
+
+}
+
+@media screen and (max-width: 510px) {
+  
+  .partner img{
+    width: 200px;
+  }
+
+}

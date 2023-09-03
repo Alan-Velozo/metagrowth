@@ -1,0 +1,66 @@
+.casos{
+    margin: 4rem 6rem;
+}
+
+.casos h2{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.casos p{
+    font-size: 1.1rem ;
+}
+
+.casos-cards{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 32%;
+    text-align: start;
+    box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem 1rem;
+}
+
+.card-img{
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+    transition: .5s ease-in-out;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card h3{
+    font-size: 1.5rem;
+    padding: 1rem 0 .5rem 0;
+}
+
+@media screen and (max-width: 850px){
+    .casos{
+        margin: 4rem 2rem;        
+    }
+
+    .casos-cards{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .casos h2{
+        font-size: 2rem;
+    }
+}
