@@ -1,6 +1,14 @@
 import "./PartnersStyles.css"
 import { PartnersData } from "./PartnersData"
 
+import FastBanana from "../assets/fastBanana.png"
+import Aven from "../assets/aven.png"
+import Fakery from "../assets/fakery.png"
+import FoxHub from "../assets/foxhub.png"
+
+
+
+
 export function Partners(){
     return <div className="partners">
         <h2>Codo a codo con nuestros partners</h2>
@@ -8,23 +16,23 @@ export function Partners(){
 
         <div className="partners-img">
             <PartnersData
-                alt="Google Partner"
-                src="https://mercodigital.com.ar/images/brand/brand-1.webp"
+                alt="Fast Banana"
+                src={FastBanana}
             />
 
             <PartnersData
-                alt="Facebook Business Partner"
-                src="https://mercodigital.com.ar/images/brand/brand-2.webp"
+                alt="Aven"
+                src={Aven}
             />
 
             <PartnersData
-                alt="Cámara Argentina de Comercio Electrónico"
-                src="https://mercodigital.com.ar/images/brand/brand-3.webp"
+                alt="Fakery"
+                src={Fakery}
             />
 
             <PartnersData
-                alt="WhatsApp"
-                src="https://mercodigital.com.ar/images/brand/brand-4.webp"     
+                alt="FoxHub"
+                src={FoxHub} 
             />
         </div>
     </div>

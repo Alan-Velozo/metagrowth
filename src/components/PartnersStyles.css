@@ -17,6 +17,7 @@
 
 .partner img{
   margin-bottom: 3rem;
+  width: 200px;
 }
 
 @media screen and (max-width: 850px){
@@ -31,10 +32,10 @@
 
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (min-width: 1920px) {
   
   .partner img{
-    width: 200px;
+    width: 300px;
   }
 
 }
