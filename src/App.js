@@ -6,33 +6,32 @@ import { Inicio } from "./routes/Inicio";
 import { Nosotros } from "./routes/Nosotros";
 import { Servicios } from "./routes/Servicios";
 import { Contacto } from "./routes/Contacto";
-import { Error } from "./routes/Error";
+
+import {ScrollToTop} from "./Scroll";
 
 
 export function App(){
-    return <>
-    
-        <div className="app">
-
+    return <div className="app">
+            
+            <ScrollToTop/>
+            
             <Routes>
-                <Route path= "/" errorElement= {<Error/>}
+                <Route path= "/"
                     element= {<Inicio/>}
                 />
 
-                <Route path= "/nosotros" errorElement= {<Error/>}
+                <Route path= "/nosotros"
                     element= {<Nosotros/>}
                 />
 
-                <Route path= "/servicios" errorElement= {<Error/>}
+                <Route path= "/servicios"
                     element= {<Servicios/>}
                 />
 
-                <Route path= "/contacto" errorElement= {<Error/>}
+                <Route path= "/contacto"
                     element= {<Contacto/>}
                 />  
             </Routes>
                     
-        </div>
-        
-    </>
+    </div>
 }
